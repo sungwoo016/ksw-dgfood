@@ -82,17 +82,16 @@ main{
 }
 
 main .mbg{
-    background: url(./palgongsan-1.jpg) center;
-    width: 100%;
+    background: url(./palgongsan\ dgnight.png);
+    width: 1920px;
     height: 600px;
-    transition: 0.7s;
+    background-size: 3840px;
+    transition: 0.5s;
 }
 main:hover .mbg{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    background-position: right;
 }
-/* ㅡㅡㅡㅡㅡ 이미지 1.2배 커지는 효과  */
-
-
 
 main .mtext{
     background: #000000a8;
