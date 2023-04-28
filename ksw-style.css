@@ -1,0 +1,303 @@
+@charset "uft-8";
+*{margin: 0; padding: 0;}
+
+body,html{font-size: 12px;}
+
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+
+ol,ul{list-style: none;}
+
+a{text-decoration: none; color: inherit;}
+
+img{vertical-align: bottom;}
+
+address{font-style: normal;}
+
+/* ㅡㅡㅡㅡㅡㅡ 초기화 ㅡㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡ 헤더 작업 ㅡㅡㅡㅡㅡㅡ */
+
+#warp{
+    width: 100%;
+    min-width: 1200px;
+}
+
+
+
+.boxalign{
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    padding: 3rem 0;
+}
+
+header .boxalign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    gap: 3rem;
+}
+
+header nav div{
+    border-bottom: 3px solid transparent;
+}
+
+header nav div a{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header .side{
+    position: absolute;
+    display: flex;
+    gap: 3px;
+    right: 3%;
+    padding: 0.5rem;
+}
+
+/* header nav input:first-child{
+    right: 5%;
+} */
+
+header nav div:hover{
+    color: rgb(233, 134, 20);
+    border-bottom: 3px solid;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡ 메인 작업 ㅡㅡㅡㅡㅡㅡ*/
+
+main{
+    position: relative;
+    overflow: hidden;
+}
+
+main .mbg{
+    background: url(./palgongsan-1.jpg) center;
+    width: 100%;
+    height: 600px;
+    transition: 0.7s;
+}
+main:hover .mbg{
+    transform: scale(1.2);
+}
+/* ㅡㅡㅡㅡㅡ 이미지 1.2배 커지는 효과  */
+
+
+
+main .mtext{
+    background: #000000a8;
+    color:#fff;
+    position: absolute;
+    top: 110px;
+    bottom: 100px;
+    padding: 3rem;
+    transition: 0.7s;
+    width: 800px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;    
+}
+/* ㅡㅡㅡㅡㅡ 글자 중앙 정렬 배경 중앙정렬 위아래 띄우기 박스안 3패딩  */
+
+main:hover .mtext{
+    padding: 1rem;
+}
+/* ㅡㅡㅡㅡㅡ 4렘 커지게  */
+
+
+main .mtext h2{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+main .mtext span{
+    display: inline-block;
+    width: 600px;
+    height: 3px;
+    background: #fff;
+    margin: 3rem 0;
+    border-radius: 50px;
+    /* transition: .7s; */
+}
+main:hover span{
+    border-radius: 0;
+}
+
+main .mtext p{
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+}
+
+main .mtext a{
+    display: inline-block;
+    border: 1px solid;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border-radius: 5%;
+    margin: 0 75px;
+    transition: 0.7s;
+    
+}
+main:hover a{
+    background: #ffffff1a;
+    color: rgb(233, 134, 20);
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡ 메인작업 끝ㅡㅡㅡㅡㅡㅡ*/
+/* ㅡㅡㅡㅡㅡㅡㅡ 섹션작업 시작 ㅡㅡㅡㅡㅡㅡㅡ */
+/* SECTION */
+section{
+    padding: 3rem 0;
+}
+
+section ul{
+    display: flex;
+    gap: 50px;
+}
+
+section ul li{
+    width: 350px;
+}
+
+section ul li:first-child{
+    background: rgb(233, 134, 20);
+    /* height: 350px; */
+    padding: 30px;
+    width: 290px;
+}
+
+section ul li h3{
+    font-size: 1.9rem;
+}
+
+section ul li > span{
+    display: block;
+    width: 1px;
+    height: 100px;
+    background: #000;
+    margin: 2rem 1rem;
+}
+section ul li p{
+    font-size: 1.2rem;
+    letter-spacing: -1.5px;
+    line-height: 1.5;
+}
+
+section ul li p:last-child{
+    font-size: 1.3rem;
+    letter-spacing: -1.5px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+section ul li a{
+    display: block;
+}
+
+section ul li a span{
+    display: block;
+}
+
+section span.imgbox img{
+    width: 100%;
+}
+
+section li span.textbox{
+    background: #e4e4f0;
+    padding: 30px;
+    transition: 0.5s;
+    border-bottom: 5px solid #000;
+    width: 290px;
+}
+section li:hover span.textbox{
+    border-bottom-color: rgb(233, 134, 20);
+}
+
+section span.textbox strong{
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+}
+
+section span.textbox span{
+    display: block;
+}
+
+section li span.textbox span.whycover{
+    display: flex;
+    padding: 10px;
+}
+
+section li span.textbox span.whycover span.wcbg{
+    background: url(./button.png);
+    width: 20px;
+    height: 20px;
+    background-size: 40px;
+    transition: .5s;
+}
+section span.textbox span.whycover span.wcbg:hover{
+    background-position: right;
+}
+
+section span.textbox span.whycover i{
+    display: block;
+    font-style: 1.5rem;
+    margin-left: 1rem;
+}
+
+
+/* FOOTER */
+footer{
+    background: rgb(233, 134, 20);
+    padding: 3rem 0 2rem;
+}
+
+footer ul{
+    display: flex;    
+    width: 534px;
+    margin: auto;
+    gap: 2rem;
+}
+
+footer ul li a{
+    display: block;
+    font-size: 1rem;
+    /* border-bottom: 1px solid #333; */
+}
+
+footer ul li a:hover{
+    transition: .5s;
+    /* padding-bottom: 2px; */
+    border-bottom: 1px solid #333;
+}
+
+footer div ul img{
+    position: absolute;
+    right: 5%;
+}
+
+footer div ul img:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+footer address{
+    text-align: center;
+    border-top: 1px solid rgb(233, 134, 20);
+    margin-top: 0.5rem;
+    padding-top: 2rem;
+    line-height: 1.6;
+}
